@@ -1,0 +1,662 @@
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیست محصولات</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons-1.7.2/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+        <!-- Preloader Start -->
+        <div class="preloader"></div>
+        <!-- Preloader Start -->
+    
+    
+
+    <!-- Layouts Start -->
+    <section>
+
+        <!-- Side Bar Start -->
+        <section class="sidebar shadow">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="http://mihranw.ir"><img src="./assets/images/logo.png" alt="logo" class="img-fluid" width="100"
+                        height="100"></a>
+                <i class="bi bi-x-circle fs-3" id="closeSideBar"></i>
+            </div>
+
+            <div class="mt-5">
+                <ul class="sidebar-item">
+                    <li>
+                        <a href="index.html" class="sidebar-link active">
+                            <i class="bi bi-speedometer me-2"></i>
+                            <span> داشبور مدیریت</span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown" id="dropdown-submenu">
+                        <div class="sidebar-link" onclick="">
+                            <i class="bi bi-shop me-2"></i>
+                            <span> محصولات</span>
+                            <i class="bi bi-chevron-down ms-auto"></i>
+                        </div>
+                        <ul class="submenu" id="submenu">
+                            <li class="submenu-item"><a href="product.html">محصولات</a></li>
+                            <li class="submenu-item my-2"><a href="#">فروخته شده ها</a></li>
+                            <li class="submenu-item"><a href="#">موجودی</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <div class="sidebar-link">
+                            <i class="bi bi-quote me-2"></i>
+                            <span> مقالات</span>
+                            <i class="bi bi-chevron-down ms-auto"></i>
+                        </div>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">مقاله</a></li>
+                            <li class="submenu-item my-2"><a href="#">ثبت شده ها</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="index.html" class="sidebar-link">
+                            <i class="bi bi-percent me-2"></i>
+                            <span>تخفیف ها</span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <div class="sidebar-link">
+                            <i class="bi bi-box-seam me-2"></i>
+                            <span>دوره ها</span>
+                            <i class="bi bi-chevron-down ms-auto"></i>
+                        </div>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">شروع شده</a></li>
+                            <li class="submenu-item my-2"><a href="#">اتمام شده ها</a></li>
+                            <li class="submenu-item"><a href="#">جدید ها</a></li>
+                            <li class="submenu-item my-2"><a href="#">برترین ها</a></li>
+                            <li class="submenu-item"><a href="#">همین ها</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html" class="sidebar-link">
+                            <i class="bi bi-chat-text me-2"></i>
+                            <span>نظرات</span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown" id="dropdown-submenu">
+                        <div class="sidebar-link">
+                            <i class="bi bi-graph-up-arrow me-2"></i>
+                            <span>چارت</span>
+                            <i class="bi bi-chevron-down ms-auto"></i>
+                        </div>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">شروع شده</a></li>
+                            <li class="submenu-item my-2"><a href="#">اتمام شده ها</a></li>
+                            <li class="submenu-item"><a href="#">جدید ها</a></li>
+                            <li class="submenu-item my-2"><a href="#">برترین ها</a></li>
+                            <li class="submenu-item"><a href="#">همین ها</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="index.html" class="sidebar-link">
+                            <i class="bi bi-file-ruled me-2"></i>
+                            <span>قوانین</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="sidebar-link">
+                            <i class="bi bi-life-preserver me-2"></i>
+                            <span>ویژگی ها</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </section>
+        <!-- Side Bar End -->
+
+
+        <!-- Main Start -->
+        <section class="main">
+
+            <!-- Header Start -->
+            <header class="header d-flex justify-content-between align-items-center ">
+                <div>
+                    <i class="bi bi-justify" id="openSideBar"></i>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="dropdown message-box mt-1">
+                        <div class="dropdown-toggle position-relative" data-bs-toggle="dropdown">
+                            <i class="bi bi-envelope fs-3"></i>
+                            <span
+                                class="position-absolute top-50 end-50 translate-middle-x badge rounded-pill bg-danger">
+                                3
+                            </span>
+                        </div>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li class="text-center">پیام ها</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/users/1.png" alt="user logo" width="40"
+                                            class="img-fluid rounded-circle">
+                                        <span class="d-block fs-7 fw-bold ms-2">قاسم نوشته </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">10 دقیقه
+                                                قبل</span></div>
+                                    </div>
+                                    <span class="text-muted fs-8">لورم ایپسوم متن ساختگی</span>
+                                </a></li>
+                            <li class="mt-2"><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/users/2.png" alt="user logo" width="40"
+                                            class="img-fluid rounded-circle">
+                                        <span class="d-block fs-7 fw-bold ms-2">غضنفر نوشته </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">14 دقیقه
+                                                قبل</span></div>
+                                    </div>
+                                    <span class="text-muted fs-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </span>
+                                </a></li>
+                            <li class="mt-2"><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/users/3.png" alt="user logo" width="40"
+                                            class="img-fluid rounded-circle">
+                                        <span class="d-block fs-7 fw-bold ms-2">چراغعلی نوشته </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">1 ساعت قبل</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-muted fs-8">لورم ایپسوم متن ساختگی با صنعت چاپ</span>
+                                </a></li>
+
+
+                            <li class="mt-4 mb-2 text-center">
+                                <a href="index.html" class="fs-8 position-relative">مشاهده همه پیام ها</a>
+                                <span
+                                    class="position-absolute top-75 end-75 translate-middle badge rounded-pill bg-warning">
+                                    10
+                                </span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="dropdown alert-box mt-1 mx-3">
+                        <div class="dropdown-toggle position-relative" data-bs-toggle="dropdown">
+                            <i class="bi bi-bell fs-3"></i>
+                            <span
+                                class="position-absolute top-25 start-25 translate-middle p-1 bg-danger border border-light rounded-circle">
+                            </span>
+
+                        </div>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li class="text-center">هشدارها</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle fs-2 text-success"></i>
+                                        <span class="d-block fs-7 fw-bold ms-2"> دوره جدید منتشر شد </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">40 دقیقه
+                                                قبل</span></div>
+                                    </div>
+                                    <p class="text-muted fs-8 mt-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-exclamation-circle fs-2 text-warning"></i>
+                                        <span class="d-block fs-7 fw-bold ms-2"> منابع سیستم پر شده ! </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">3 ساعت
+                                                قبل</span></div>
+                                    </div>
+                                    <p class="text-muted fs-8 mt-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-x-circle fs-2 text-danger"></i>
+                                        <span class="d-block fs-7 fw-bold ms-2"> فایل ذخیره نشد! </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">48 ساعت
+                                                قبل</span></div>
+                                    </div>
+                                    <p class="text-muted fs-8 mt-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+
+                                </a></li>
+
+
+
+                            <li class="mt-4 mb-2 text-center">
+                                <a href="index.html" class="fs-8 position-relative">مشاهده اعلان ها</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="dropdown profile-box">
+                        <div class="dropdown-toggle position-relative profile" data-bs-toggle="dropdown">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/users/personal.png" alt="Profile" width="45"
+                                    class="img-fluid rounded-circle">
+                                <div class="ms-2">
+                                    <p class="fw-bold fs-7 mb-0">مهران ناصر</p>
+                                    <span class="fw-bold fs-9 text-muted mt-0">مدیر سایت</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li class="p-1">
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-person-bounding-box fs-6 me-1"></i>
+                                    حساب کاربری
+                                </a>
+                            </li>
+                            <li class="p-1">
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-cash-coin fs-6 me-1"></i>
+                                    کیف پول
+                                </a>
+                            </li>
+                            <li class="p-1">
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-key fs-6 me-1"></i>
+                                    تغییر رمز عبور
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="p-1">
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-door-open fs-6 me-1"></i>
+                                    خروج از حساب
+                                </a>
+                            </li>
+
+
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+            <!-- Header End -->
+
+            <!-- Content Start -->
+            <section class="content p-1 p-lg-3 mt-5 mt-lg-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">داشبورد</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">لیست محصولات</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <div class="card shadow-sm p-3">
+                                <div class="card-header text-end">
+                                    <button class="btn btn-light-primary text-dark" data-bs-toggle="modal"
+                                        data-bs-target="#filtermodal">
+                                        <i class="bi bi-funnel fs-6"></i>
+                                        فیلتر
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                   <div class="table-responsive">
+                                    <table class="table table-hover align-middle text-center">
+                                        <thead>
+                                            <tr>
+                                                <td>#</td>
+                                                <td class="fw-bold">نام محصول</td>
+                                                <td class="fw-bold">موجودی</td>
+                                                <td class="fw-bold">قیمت</td>
+                                                <td class="fw-bold">وضعیت</td>
+                                                <td class="fw-bold">عملیات</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>100<span class="fs-7">عدد</span> </td>
+                                                <td>35,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>140<span class="fs-7">عدد</span> </td>
+                                                <td>23,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>52<span class="fs-7">عدد</span> </td>
+                                                <td>19,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>100<span class="fs-7">عدد</span> </td>
+                                                <td>90,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>36<span class="fs-7">عدد</span> </td>
+                                                <td>78,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>65<span class="fs-7">عدد</span> </td>
+                                                <td>45,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>80<span class="fs-7">عدد</span> </td>
+                                                <td>43,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>458<span class="fs-7">عدد</span> </td>
+                                                <td>9,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>32<span class="fs-7">عدد</span> </td>
+                                                <td>43,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>لورم ایپسوم</td>
+                                                <td>81<span class="fs-7">عدد</span> </td>
+                                                <td>79,000<span class="fs-7">تومان</span></td>
+                                                <td>تایید شده</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-light-primary dropdown-toggle"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown">
+                                                            عملیات
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">جزئیات</a></li>
+                                                            <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+                                   </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <!-- Pagination Start -->
+                                    <nav>
+                                        <ul class="pagination">
+                                          <li class="page-item">
+                                            <a class="page-link" href="#">
+                                              <span>&laquo;</span>
+                                            </a>
+                                          </li>
+                                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item">
+                                            <a class="page-link" href="#">
+                                              <span>&raquo;</span>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                    <!-- Pagination End -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Content End -->
+
+
+
+
+            <!-- Filter Modal Start -->
+            <div class="modal fade" id="filtermodal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">فیلتر محصولات</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#">
+                                <div class="mb-3">
+                                    <label for="productName" class="form-label">نام محصول</label>
+                                    <input type="text" class="form-control" id="productName">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="1">یک</option>
+                                        <option value="2">دو</option>
+                                        <option value="3">سه</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                            <button type="submit" class="btn btn-primary">فیلتر</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Filter Modal End -->
+
+
+
+
+            <!-- Footer Start -->
+            <footer class="mt-4 p-2">
+                <div class="container text-center">
+                    <a href="http://mihranw.ir" target="_blank" class="text-dark fw-bold"> Mihranw &copy;</a>
+                </div>
+            </footer>
+            <!-- Footer End -->
+
+        </section>
+        <!-- Main End -->
+    </section>
+    <!-- Layouts End -->
+
+
+
+
+
+
+
+
+
+    <!-- Mihranw.ir -->
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/Jquery.min.js"></script>
+    <script src="./assets/js/plugins/prueCounter.js"></script>
+ 
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
