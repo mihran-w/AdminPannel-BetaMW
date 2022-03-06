@@ -13,15 +13,27 @@ if (mediaWidth <= 992) {
 }
 
 function CloseSideBar() {
-  main.style.marginRight = "0";
-  sidebar.style.width = "0";
-  sidebar.style.display = "none";
+  if (mediaWidth <= 600) {
+    main.style.marginRight = "0";
+    sidebar.style.width = "16rem";
+    sidebar.style.display = "none";
+  } else {
+    main.style.marginRight = "0";
+    sidebar.style.width = "0";
+    sidebar.style.display = "none";
+  }
 }
 
 function OpenSideBar() {
-  main.style.marginRight = "16rem";
-  sidebar.style.width = "16rem";
-  sidebar.style.display = "";
+  if (mediaWidth <= 600) {
+    main.style.marginRight = "0rem";
+    sidebar.style.width = "16rem";
+    sidebar.style.display = "block";
+  } else {
+    main.style.marginRight = "16rem";
+    sidebar.style.width = "16rem";
+    sidebar.style.display = "block";
+  }
 }
 
 opesSidebarBtn.addEventListener("click", function () {
@@ -35,25 +47,26 @@ closeSidebarBtn.addEventListener("click", function () {
 // DropDown Sub Menu
 $(document).ready(function () {
   const dropdown = $(".dropdown");
-  var chevron = $(".bi-chevron-down");
-  console.log(chevron);
+
   const submenu = $(".submenu");
   var opens = false;
-  $.each(dropdown, function (indexInArray, valueOfElement) {
-    $(this).on("click", function () {
-      if (opens == false) {
-        opens = true;
+  $.each(dropdown, function () {
+    $(this).on("click", function (e) {
+      e.preventDefault();
+      if (opens === false) {
         $(this).find(submenu).slideDown(100);
-        // $(chevron).removeClass("bi-chevron-down");
-        // $(chevron).addClass("bi-chevron-up");
+        opens = true;
       } else {
-        opens = false;
         $(this).find(submenu).slideUp(100);
-        // $(chevron).removeClass("bi-chevron-up");
-        // $(chevron).addClass("bi-chevron-down");
+        opens = false;
       }
     });
   });
+});
+
+// Prue Counter init
+$(document).ready(function () {
+  new PureCounter();
 });
 
 // Preloader

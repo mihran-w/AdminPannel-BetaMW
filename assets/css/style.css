@@ -54,9 +54,50 @@ a {
 }
 
 .cellphone {
-  direction: ltr;
-  text-align: right;
+  direction: ltr !important;
+  text-align: right ;
 }
+
+.lh-0{
+  line-height: 0 !important;
+}
+
+.fs-7 {
+  font-size: 0.9rem !important;
+}
+
+.fs-8 {
+  font-size: 0.8rem !important;
+}
+.fs-9 {
+  font-size: 0.7rem !important;
+}
+.fs-10 {
+  font-size: 0.6rem !important;
+}
+
+.bg-blue{
+  background-color: #119dc4 !important;
+}
+
+.bg-yellow{
+  background-color: #fdcb6e !important;
+}
+.bg-green{
+  background-color: #00b894 !important;
+}
+
+.btn-light-primary{
+  background-color: #eaf1f1;
+  color: #6c5ce7;
+  transition: all 0.3s;
+  border: none;
+}
+.btn-light-primary:hover{
+  background-color: #cedbdb;
+  color: #000;
+}
+
 
 /* Side Bar */
 .sidebar {
@@ -65,6 +106,8 @@ a {
   position: fixed;
   padding: 2rem;
   overflow-y: hidden;
+  z-index: 1000;
+  background-color: #fff;
   transition: all 0.8s;
 }
 .sidebar:hover {
@@ -136,8 +179,8 @@ a {
 }
 
 .sidebar .sidebar-item .submenu {
-  list-style: none;
   display: none;
+  list-style: none;
 }
 
 .sidebar .sidebar-item .submenu .submenu-item {
@@ -156,9 +199,10 @@ a {
   color: #6c5ce7;
 }
 
+
+
 /* Main */
 .main {
-  height: 100vh;
   background-color: #eaf1f1;
   padding: 1rem;
   transition: all 0.8s;
@@ -167,9 +211,58 @@ a {
 .main #openSideBar {
   font-size: 30px;
   cursor: pointer;
+  color: #119dc4;
   transition: all 0.3s;
 }
 
-/* .main #openSideBar:hover{
+.main .header .message-box {
+  cursor: pointer;
+}
+.main .header .message-box .dropdown-menu {
+  width: 20rem !important;
+}
+.main .header .alert-box {
+  cursor: pointer;
+}
+.main .header .alert-box .dropdown-menu {
+  width: 20rem !important;
+}
+.main .header .profile-box {
+  cursor: pointer;
+}
+.main .header .profile-box .profile::after {
+  display: none !important;
+}
+.main .header .profile-box .dropdown-menu {
+  width: 13rem;
+}
 
-} */
+
+
+.main .card{
+  padding: 0.5rem;
+  border: none !important;
+  border-radius: 1.3rem;
+}
+.main .card .card-header{
+  padding: 0.5rem;
+  border: none !important;
+  background-color: #fff;
+}
+
+.main .content .stats .card .stats-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.main .content .stats .card .stats-icon i{
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 3rem;
+  line-height: 0;
+}
+
+.main .content #chartdiv{
+  height: 500px;
+}

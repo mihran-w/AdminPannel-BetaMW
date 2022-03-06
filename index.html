@@ -18,7 +18,7 @@
     <section>
 
         <!-- Side Bar Start -->
-        <section class="sidebar">
+        <section class="sidebar shadow">
             <div class="d-flex align-items-center justify-content-between">
                 <a href="http://mihranw.ir"><img src="./assets/images/logo.png" alt="logo" class="img-fluid" width="100"
                         height="100"></a>
@@ -34,10 +34,10 @@
                         </a>
                     </li>
 
-                    <li class="dropdown" id="dropdown-submenu" >
-                        <div class="sidebar-link"onclick="">
+                    <li class="dropdown" id="dropdown-submenu">
+                        <div class="sidebar-link" onclick="">
                             <i class="bi bi-shop me-2"></i>
-                            <span>  محصولات</span>
+                            <span> محصولات</span>
                             <i class="bi bi-chevron-down ms-auto"></i>
                         </div>
                         <ul class="submenu" id="submenu">
@@ -47,7 +47,7 @@
                         </ul>
                     </li>
 
-                    <li  class="dropdown">
+                    <li class="dropdown">
                         <div class="sidebar-link">
                             <i class="bi bi-quote me-2"></i>
                             <span> مقالات</span>
@@ -67,7 +67,7 @@
                         </a>
                     </li>
 
-                    <li  class="dropdown">
+                    <li class="dropdown">
                         <div class="sidebar-link">
                             <i class="bi bi-box-seam me-2"></i>
                             <span>دوره ها</span>
@@ -89,7 +89,7 @@
                         </a>
                     </li>
 
-                    <li  class="dropdown"  id="dropdown-submenu" >
+                    <li class="dropdown" id="dropdown-submenu">
                         <div class="sidebar-link">
                             <i class="bi bi-graph-up-arrow me-2"></i>
                             <span>چارت</span>
@@ -117,7 +117,7 @@
                         </a>
                     </li>
 
-                    
+
                 </ul>
             </div>
 
@@ -125,16 +125,511 @@
         <!-- Side Bar End -->
 
 
-
-
+        <!-- Main Start -->
         <section class="main">
-            <header>
-                <i class="bi bi-list" id="openSideBar"></i>
+
+            <!-- Header Start -->
+            <header class="header d-flex justify-content-between align-items-center ">
+                <div>
+                    <i class="bi bi-justify" id="openSideBar"></i>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="dropdown message-box mt-1">
+                        <div class="dropdown-toggle position-relative" data-bs-toggle="dropdown">
+                            <i class="bi bi-envelope fs-3"></i>
+                            <span
+                                class="position-absolute top-50 end-50 translate-middle-x badge rounded-pill bg-danger">
+                                3
+                            </span>
+                        </div>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li class="text-center">پیام ها</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/users/1.png" alt="user logo" width="40"
+                                            class="img-fluid rounded-circle">
+                                        <span class="d-block fs-7 fw-bold ms-2">قاسم نوشته </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">10 دقیقه
+                                                قبل</span></div>
+                                    </div>
+                                    <span class="text-muted fs-8">لورم ایپسوم متن ساختگی</span>
+                                </a></li>
+                            <li class="mt-2"><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/users/2.png" alt="user logo" width="40"
+                                            class="img-fluid rounded-circle">
+                                        <span class="d-block fs-7 fw-bold ms-2">غضنفر نوشته </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">14 دقیقه
+                                                قبل</span></div>
+                                    </div>
+                                    <span class="text-muted fs-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </span>
+                                </a></li>
+                            <li class="mt-2"><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/users/3.png" alt="user logo" width="40"
+                                            class="img-fluid rounded-circle">
+                                        <span class="d-block fs-7 fw-bold ms-2">چراغعلی نوشته </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">1 ساعت قبل</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-muted fs-8">لورم ایپسوم متن ساختگی با صنعت چاپ</span>
+                                </a></li>
+
+
+                            <li class="mt-4 mb-2 text-center">
+                                <a href="index.html" class="fs-8 position-relative">مشاهده همه پیام ها</a>
+                                <span
+                                    class="position-absolute top-75 end-75 translate-middle badge rounded-pill bg-warning">
+                                    10
+                                </span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="dropdown alert-box mt-1 mx-3">
+                        <div class="dropdown-toggle position-relative" data-bs-toggle="dropdown">
+                            <i class="bi bi-bell fs-3"></i>
+                            <span
+                                class="position-absolute top-25 start-25 translate-middle p-1 bg-danger border border-light rounded-circle">
+                            </span>
+
+                        </div>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li class="text-center">هشدارها</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle fs-2 text-success"></i>
+                                        <span class="d-block fs-7 fw-bold ms-2"> دوره جدید منتشر شد </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">40 دقیقه
+                                                قبل</span></div>
+                                    </div>
+                                    <p class="text-muted fs-8 mt-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-exclamation-circle fs-2 text-warning"></i>
+                                        <span class="d-block fs-7 fw-bold ms-2"> منابع سیستم پر شده ! </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">3 ساعت
+                                                قبل</span></div>
+                                    </div>
+                                    <p class="text-muted fs-8 mt-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-x-circle fs-2 text-danger"></i>
+                                        <span class="d-block fs-7 fw-bold ms-2"> فایل ذخیره نشد! </span>
+                                        <div class="card ms-1 p-1"><span class="text-secondary fs-10">48 ساعت
+                                                قبل</span></div>
+                                    </div>
+                                    <p class="text-muted fs-8 mt-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+
+                                </a></li>
+
+
+
+                            <li class="mt-4 mb-2 text-center">
+                                <a href="index.html" class="fs-8 position-relative">مشاهده اعلان ها</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="dropdown profile-box">
+                        <div class="dropdown-toggle position-relative profile" data-bs-toggle="dropdown">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/users/personal.png" alt="Profile" width="45"
+                                    class="img-fluid rounded-circle">
+                                <div class="ms-2">
+                                    <p class="fw-bold fs-7 mb-0">مهران ناصر</p>
+                                    <span class="fw-bold fs-9 text-muted mt-0">مدیر سایت</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li class="p-1">
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-person-bounding-box fs-6 me-1"></i>
+                                    حساب کاربری
+                                </a>
+                            </li>
+                            <li class="p-1">
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-cash-coin fs-6 me-1"></i>
+                                    کیف پول
+                                </a>
+                            </li>
+                            <li class="p-1">
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-key fs-6 me-1"></i>
+                                    تغییر رمز عبور
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="p-1">
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-door-open fs-6 me-1"></i>
+                                    خروج از حساب
+                                </a>
+                            </li>
+
+
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+
             </header>
-            <section class="content">
-                content
+            <!-- Header End -->
+
+            <!-- Content Start -->
+            <section class="content p-1 p-lg-3 mt-5 mt-lg-3">
+                <div class="container-fluid">
+                    <div class="row g-3">
+                        <!-- stats Start -->
+                        <div class="col-lg-9 stats">
+                            <div class="row g-3">
+                                <div class="col-6 col-lg-3">
+                                    <div class="card shadow-sm">
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                <div class="col-sm-3 col-lg-4">
+                                                    <div class="stats-icon">
+                                                        <i class="bi bi-play-circle fs-1 bg-yellow"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-9 col-lg-8 text-center text-lg-start">
+                                                    <h5 class="text-muted fs-5 fw-bold lh-1">تعداد بازدید</h5>
+                                                    <h6 class="fs-6 fw-bold purecounter" data-purecounter-start="0"
+                                                        data-purecounter-end="1500">0</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="card shadow-sm">
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                <div class="col-sm-3 col-lg-4">
+                                                    <div class="stats-icon">
+                                                        <i class="bi bi-people fs-1 bg-blue"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-9 col-lg-8 text-center text-lg-start">
+                                                    <h5 class="text-muted fs-5 fw-bold lh-1">تعداد کاربران</h5>
+                                                    <h6 class="fs-6 fw-bold purecounter" data-purecounter-start="0"
+                                                        data-purecounter-end="2341">0</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="card shadow-sm">
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                <div class="col-sm-3 col-lg-4">
+                                                    <div class="stats-icon">
+                                                        <i class="bi bi-coin fs-1 bg-green"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-9 col-lg-8 text-center text-lg-start">
+                                                    <h5 class="text-muted fs-5 fw-bold lh-1">درآمد</h5>
+                                                    <h6 class="fs-6 fw-bold purecounter" data-purecounter-start="0"
+                                                        data-purecounter-end="1350000">0</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <div class="card shadow-sm">
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                <div class="col-sm-3 col-lg-4">
+                                                    <div class="stats-icon">
+                                                        <i class="bi bi-bag fs-1 bg-danger"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-9 col-lg-8 text-center text-lg-start">
+                                                    <h5 class="text-muted fs-5 fw-bold lh-1">تعداد فروش</h5>
+                                                    <h6 class="fs-6 fw-bold purecounter" data-purecounter-start="0"
+                                                        data-purecounter-end="456">0</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Data Chart Start -->
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="card shadow-sm p-2">
+                                        <div class="card-header">
+                                            <h5 class="fw-bold">وضعیت بازدید ماهانه</h5>
+                                        </div>
+                                        <div class="card-body cellphone">
+                                            <div id="chartdiv"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Data Chart End -->
+
+                            <!-- Comments And Progress Bar Start -->
+                            <div class="row g-3 mt-4">
+                                <div class="col-lg-4">
+                                    <div class="card shadow-sm">
+                                        <div class="card-header">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-hdd fs-3 lh-0"></i>
+                                                <h5 class="fs-6 fw-bold ms-2 mt-2">
+                                                    فضای ذخیره سازی
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-yellow" style="width: 75%;"
+                                                        aria-valuenow="75">75%
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted fs-7">فضای باقی مانده</p>
+                                            </div>
+                                            <hr>
+                                            <div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" style="width: 38%;" aria-valuenow="38">38%
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted fs-7">ذخیره شده</p>
+                                            </div>
+                                            <hr>
+                                            <div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger" style="width: 63%;"
+                                                        aria-valuenow="63">63%
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted fs-7">حذف شده ها</p>
+                                            </div>
+                                            <hr>
+                                            <div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-green" style="width: 54%;"
+                                                        aria-valuenow="54">54%
+                                                    </div>
+                                                </div>
+                                                <p class="text-muted fs-7">پهنای موجود</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="card shadow-sm">
+                                        <div class="card-header">
+                                            <h5 class="fw-bold">
+                                                آخرین نظرات کاربران
+                                            </h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table table-hover align-middle">
+                                                <thead>
+                                                    <tr>
+                                                        <td class="fw-bold">نمایه</td>
+                                                        <td class="fw-bold">نام کاربری</td>
+                                                        <td class="fw-bold">متن پیام</td>
+                                                        <td>#</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="./assets/images/users/1.png" alt="user"
+                                                                class="img-fluid rounded-circle" width="50">
+                                                        </td>
+                                                        <td class="cellphone">
+                                                            @ghazanfar
+                                                        </td>
+                                                        <td>
+                                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                                            با استفاده از طراحان گرافیک است.
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:" data-bs-toggle="tooltip" data-bs-placement="top" title="بیشتر">
+                                                                <i class="bi bi-three-dots fs-5"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="./assets/images/users/2.png" alt="user"
+                                                                class="img-fluid rounded-circle" width="50">
+                                                        </td>
+                                                        <td class="cellphone">
+                                                            @ghasem
+                                                        </td>
+                                                        <td>
+                                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:" data-bs-toggle="tooltip" data-bs-placement="top" title="بیشتر">
+                                                                <i class="bi bi-three-dots fs-5"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="./assets/images/users/3.png" alt="user"
+                                                                class="img-fluid rounded-circle" width="50">
+                                                        </td>
+                                                        <td class="cellphone">
+                                                            @cheragheali
+                                                        </td>
+                                                        <td>
+                                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:" data-bs-toggle="tooltip" data-bs-placement="top" title="بیشتر">
+                                                                <i class="bi bi-three-dots fs-5"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Comments And Progress Bar End -->
+
+
+
+                        </div>
+                        <!-- stats End -->
+
+                        <!-- Users Start -->
+                        <div class="col-lg-3">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <div class=" d-flex align-items-center justify-content-center">
+                                        <img src="./assets/images/users/personal.png" alt="personal"
+                                            class="img-fluid rounded-circle" width="70">
+                                        <div class="ms-2">
+                                            <h5 class="fw-bold lh-1">مهران ناصر</h5>
+                                            <p class="fs-7 text-muted lh-1">mihranw@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="user-information mt-4">
+                                        <div class="d-flex align-items-center">
+                                            <p class="fs-7 fw-bold lh-1">شهر : </p>
+                                            <p class="fs-7 ms-1 lh-1"> تبریز</p>
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <p class="fs-7 fw-bold lh-1">سمت : </p>
+                                            <p class="fs-7 ms-1 lh-1"> مدیر وبسایت</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="fs-7 fw-bold lh-1"> تخصص : </p>
+                                            <p class="fs-7 ms-1 lh-1"> برنامه نویس Full Stack </p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="fs-7 fw-bold lh-1"> تعداد دانشجو : </p>
+                                            <p class="fs-7 ms-1 lh-1"> 465 </p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="fs-7 fw-bold lh-1">تاریخ عضویت : </p>
+                                            <p class=" fs-7 ms-1 lh-1">24 اسفند 1400</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="fs-7 fw-bold lh-1">شماره تماس : </p>
+                                            <p class="cellphone fs-7 ms-1 lh-1">09120000000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-sm mt-3 p-2">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <i class="bi bi-person-check fs-4 text-success"></i>
+                                        <h4 class="fw-bold fs-5 ms-2 mt-2">
+                                            ادمین های وبسایت
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center p-1">
+                                        <img src="./assets/images/users/1.png" alt="user"
+                                            class="img-fluid rounded-circle" width="60">
+                                        <div class="ms-2 mt-2">
+                                            <h3 class="fw-bold fs-6 lh-1">غضنفر</h3>
+                                            <p class="lh-1 text-muted">ghazanfar@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center my-3 p-1">
+                                        <img src="./assets/images/users/2.png" alt="user"
+                                            class="img-fluid rounded-circle" width="60">
+                                        <div class="ms-2 mt-2">
+                                            <h3 class="fw-bold fs-6 lh-1">چراغعلی</h3>
+                                            <p class="lh-1 text-muted">cheragheali@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center p-1">
+                                        <img src="./assets/images/users/3.png" alt="user"
+                                            class="img-fluid rounded-circle" width="60">
+                                        <div class="ms-2 mt-2">
+                                            <h3 class="fw-bold fs-6 lh-1">قاسم</h3>
+                                            <p class="lh-1 text-muted">ghasem@gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid mt-4">
+                                        <a href="javascript:" class="btn btn-light-primary">نمایش همه ادمین ها</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- Users End -->
+
+                    </div>
+                </div>
             </section>
+            <!-- Content End -->
+
         </section>
+        <!-- Main End -->
+
+        <section style="height: 200px;"></section>
+
     </section>
     <!-- Layouts End -->
 
@@ -150,6 +645,13 @@
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/Jquery.min.js"></script>
+    <script src="./assets/js/plugins/prueCounter.js"></script>
+    <!-- Charts -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="./assets/js/plugins/chart.js"></script>
+
     <script src="./assets/js/main.js"></script>
 </body>
 
