@@ -13,10 +13,14 @@
 
 <body>
 
+    <!-- Preloader Start -->
+    <div class="preloader"></div>
+    <!-- Preloader Start -->
+
+
 
     <!-- Layouts Start -->
     <section>
-
         <!-- Side Bar Start -->
         <section class="sidebar shadow">
             <div class="d-flex align-items-center justify-content-between">
@@ -41,7 +45,7 @@
                             <i class="bi bi-chevron-down ms-auto"></i>
                         </div>
                         <ul class="submenu" id="submenu">
-                            <li class="submenu-item"><a href="#">محصولات جدید</a></li>
+                            <li class="submenu-item"><a href="product.html">محصولات</a></li>
                             <li class="submenu-item my-2"><a href="#">فروخته شده ها</a></li>
                             <li class="submenu-item"><a href="#">موجودی</a></li>
                         </ul>
@@ -458,6 +462,7 @@
                                             </h5>
                                         </div>
                                         <div class="card-body">
+                                         <div class="table-responsive">
                                             <table class="table table-hover align-middle">
                                                 <thead>
                                                     <tr>
@@ -522,6 +527,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                         </div>
                                         </div>
                                     </div>
                                 </div>
@@ -616,7 +622,18 @@
 
                                 </div>
                             </div>
-                            
+
+                            <div class="card shadow-sm mt-3">
+                                <div class="card-header">
+                                    <h5 class="fw-bold">
+                                        نمودار دریافتی و پرداختی
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div id="chart-circle"></div>
+                                </div>
+                            </div>
+
                         </div>
                         <!-- Users End -->
 
@@ -625,11 +642,16 @@
             </section>
             <!-- Content End -->
 
+            <!-- Footer Start -->
+            <footer class="mt-4 p-2">
+                <div class="container text-center">
+                    <a href="http://mihranw.ir" target="_blank" class="text-dark fw-bold"> Mihranw &copy;</a>
+                </div>
+            </footer>
+            <!-- Footer End -->
+
         </section>
         <!-- Main End -->
-
-        <section style="height: 200px;"></section>
-
     </section>
     <!-- Layouts End -->
 
@@ -649,8 +671,13 @@
     <!-- Charts -->
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <script src="./assets/js/plugins/chart.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="./assets/js/plugins/chartcircle.js"></script>
 
     <script src="./assets/js/main.js"></script>
 </body>

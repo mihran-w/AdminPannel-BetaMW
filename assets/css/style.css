@@ -48,6 +48,18 @@ p {
   line-height: 2 !important;
 }
 
+.preloader{
+  background: url(../images/gifs/preloader.gif) center no-repeat;
+  background-color: #f1f2f3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 5000;
+}
+
 /* Utilities */
 a {
   text-decoration: none;
@@ -96,6 +108,15 @@ a {
 .btn-light-primary:hover{
   background-color: #cedbdb;
   color: #000;
+}
+
+
+
+/* Override */
+.pagination .active-sm{
+  background-color: #eaf1f1 !important;
+  color: #6c5ce7 !important;
+  border: none !important;
 }
 
 
@@ -265,4 +286,7 @@ a {
 
 .main .content #chartdiv{
   height: 500px;
+}
+.main .content #chart-circle{
+  height: 250px;
 }

@@ -70,6 +70,11 @@ $(document).ready(function () {
 });
 
 // Preloader
+$(window).on("load",function(){
+  $(".preloader").fadeOut("slow");
+})
+
+// Preloader
 // $(window).on("load", function(){
 //   $(".preloader").delay(800).fadeOut("slow");
 // })
