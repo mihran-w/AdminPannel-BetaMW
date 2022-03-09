@@ -1,3 +1,13 @@
+// Prue Counter init
+$(document).ready(function () {
+  new PureCounter();
+});
+
+// Preloader
+$(window).on("load",function(){
+  $(".preloader").fadeOut("slow");
+})
+
 // Toggle Side Bar
 const opesSidebarBtn = document.getElementById("openSideBar");
 const closeSidebarBtn = document.getElementById("closeSideBar");
@@ -52,7 +62,6 @@ $(document).ready(function () {
   var opens = false;
   $.each(dropdown, function () {
     $(this).on("click", function (e) {
-      e.preventDefault();
       if (opens === false) {
         $(this).find(submenu).slideDown(100);
         opens = true;
@@ -64,20 +73,8 @@ $(document).ready(function () {
   });
 });
 
-// Prue Counter init
-$(document).ready(function () {
-  new PureCounter();
-});
 
-// Preloader
-$(window).on("load",function(){
-  $(".preloader").fadeOut("slow");
-})
 
-// Preloader
-// $(window).on("load", function(){
-//   $(".preloader").delay(800).fadeOut("slow");
-// })
 
 // Dark Mode Theme
 // $(document).ready(function () {
